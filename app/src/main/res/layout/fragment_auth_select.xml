@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="800dp"
+    android:layout_height="388dp"
+    tools:context=".pages.AuthSelectFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:id="@+id/frameMember"
+        android:layout_width="344dp"
+        android:layout_height="368dp"
+        android:background="@drawable/button_custom"
+        android:layout_marginStart="39dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewMemberCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/not_checked"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="contentDescription"/>
+
+            <TextView
+                android:id="@+id/textViewMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/memberMessage"
+                android:textSize="32sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageViewMember"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:background="@drawable/member"
+                android:layout_marginTop="-30sp"
+                android:importantForAccessibility="no"
+                app:layout_constraintTop_toTopOf="@id/layoutMember"
+                app:layout_constraintEnd_toEndOf="@id/layoutMember"
+                app:layout_constraintStart_toStartOf="@id/layoutMember"
+                app:layout_constraintBottom_toBottomOf="@id/layoutMember"/>
+
+            <TextView
+                android:id="@+id/textViewMemberContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/memberInfoMessage"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="@id/imageViewMember"
+                app:layout_constraintTop_toBottomOf="@id/imageViewMember"/>
+
+            <TextView
+                android:id="@+id/textViewMemberUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chargingUnit"
+                android:textSize="22sp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="@id/textViewMember"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewMemberUnitInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                app:layout_constraintTop_toTopOf="@id/textViewMemberUnit"
+                app:layout_constraintStart_toEndOf="@id/textViewMemberUnit"
+                app:layout_constraintBottom_toBottomOf="@id/textViewMemberUnit"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameNoMember"
+        android:layout_width="344dp"
+        android:layout_height="368dp"
+        android:background="@drawable/button_custom"
+        android:layout_marginEnd="39dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutNonMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewNoMemberCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/not_checked"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="contentDescription"/>
+
+            <TextView
+                android:id="@+id/textViewNoMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nomemberMessage"
+                android:textSize="32sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageViewNoMember"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:background="@drawable/nomember"
+                android:layout_marginTop="-30sp"
+                android:importantForAccessibility="no"
+                app:layout_constraintTop_toTopOf="@id/layoutNonMember"
+                app:layout_constraintEnd_toEndOf="@id/layoutNonMember"
+                app:layout_constraintStart_toStartOf="@id/layoutNonMember"
+                app:layout_constraintBottom_toBottomOf="@id/layoutNonMember"/>
+
+            <TextView
+                android:id="@+id/textViewNoMemberContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nomemberInfoMessage"
+                android:textSize="18sp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintStart_toStartOf="@id/imageViewNoMember"
+                app:layout_constraintTop_toBottomOf="@id/imageViewNoMember"/>
+
+            <TextView
+                android:id="@+id/textViewNoMemberUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chargingUnit"
+                android:textSize="22sp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="@id/textViewNoMember"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewNoMemberUnitInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                app:layout_constraintTop_toTopOf="@id/textViewNoMemberUnit"
+                app:layout_constraintStart_toEndOf="@id/textViewNoMemberUnit"
+                app:layout_constraintBottom_toBottomOf="@id/textViewNoMemberUnit"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >

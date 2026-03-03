@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:height="250dp" android:width="250dp">
+                <shape
+                    android:shape="rectangle">
+
+                    <gradient
+                        android:angle="0"
+                        android:startColor="@color/btnGradientStartColor"
+                        android:centerColor="@color/btnGradientCenterColor"
+                        android:endColor="@color/btnGradientEndColor"
+                        android:type="linear" />
+
+
+                    <corners android:radius="10dp"/>
+                </shape>
+            </item>
+            <item android:height="235dp" android:width="235dp" android:gravity="center">
+                <shape
+                    android:shape="rectangle">
+
+                    <solid android:color="#fff" />
+
+                    <corners android:radius="8dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:height="250dp" android:width="250dp">
+                <shape
+                    android:shape="rectangle">
+
+                    <gradient
+                        android:angle="0"
+                        android:startColor="@color/btnGradientStartColor"
+                        android:centerColor="@color/btnGradientCenterColor"
+                        android:endColor="@color/btnGradientEndColor"
+                        android:type="linear" />
+
+
+                    <corners android:radius="10dp"/>
+                </shape>
+            </item>
+            <item android:height="235dp" android:width="235dp" android:gravity="center">
+                <shape
+                    android:shape="rectangle">
+
+                    <solid android:color="@color/pressed" />
+
+                    <corners android:radius="8dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

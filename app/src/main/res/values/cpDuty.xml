@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cpDuty">
+        <item>30.0A</item>
+        <item>24.0A</item>
+        <item>18.0A</item>
+        <item>15.0A</item>
+        <item>9.6A</item>
+        <item>6.0A</item>
+    </string-array>
+</resources>
